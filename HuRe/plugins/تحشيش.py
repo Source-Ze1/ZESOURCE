@@ -441,3 +441,94 @@ async def permalink(mention):
     lMl10l = random.choice(rehu)
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"**۞︙الهمسة من المستخدم [{HuRe}](tg://user?id={user.id}) تم كشفها بنجاح ✓**\n**۞︙  الهمسة هي : {lMl10l} ** ")
+@l313l.on_message(filters.command("اجمد كده", prefixes=f".") & filters.me)
+async def agmad(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/78")        
+
+@l313l.on_message(filters.command("يالهوي", prefixes=f".") & filters.me)
+async def yalhowe(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/79")      
+     
+@l313l.on_message(filters.command("احترمي نفسك", prefixes=f".") & filters.me)
+async def ehtrmy(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/108")           
+     
+@l313l.on_message(filters.command("عيب", prefixes=f".") & filters.me)
+async def eeeb(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/105")          
+     
+@l313l.on_message(filters.command("مينفعش", prefixes=f".") & filters.me)
+async def maynah(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/97")  
+
+@l313l.on_message(filters.command("مديك قلبي", prefixes=f".") & filters.me)
+async def alby(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/91")      
+     
+@l313l.on_message(filters.command("اهلا بيك", prefixes=f".") & filters.me)
+async def ahlnbek(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/92")      
+     
+@l313l.on_message(filters.command("هعوره", prefixes=f".") & filters.me)
+async def hworo(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/82")       
+     
+@l313l.on_message(filters.command("حفل", prefixes=f".") & filters.me)
+async def kfel(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/97")                
+     
+@l313l.on_message(filters.command("خد نفس", prefixes=f".") & filters.me)
+async def nafs(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/83")    
+     
+@l313l.on_message(filters.command("امال", prefixes=f".") & filters.me)
+async def omal(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/88")             
+     
+@l313l.on_message(filters.command("هتولعو", prefixes=f".") & filters.me)
+async def yyleh(c, msg):        
+     await msg.reply_voice("https://t.me/UI3I3/106")    
+                             
+@l313l.on_message(filters.command("انا تعبان", prefixes=f".") & filters.me)
+async def taban(c, msg):        
+     await msg.reply_voice("https://t.me/UI3I3/101")    
+     
+@l313l.on_message(filters.command("عملت اي", prefixes=f".") & filters.me)
+async def anaemlt(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/104")         
+     
+@l313l.on_message(filters.command("المخدرات", prefixes=f".") & filters.me)
+async def mokde(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/102")       
+     
+@l313l.on_message(filters.command("يا مرا", prefixes=f".") & filters.me)
+async def mrara(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/95")  
+     
+@l313l.on_message(filters.command("بتحرجني", prefixes=f".") & filters.me)
+async def aklak(c, msg):     
+     await msg.reply_voice("https://t.me/UI3I3/77")      
+     
+@l313l.on_message(filters.command("انضف", prefixes=f".") & filters.me)
+async def endaf(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/98")      
+                                                                                                            
+@l313l.on_message(filters.command("هنضحك", prefixes=f".") & filters.me)
+async def hantk(c, msg):    
+     await msg.reply_voice("https://t.me/UI3I3/100")      
+     
+@l313l.on_message(filters.command("يا راجل", prefixes=f".") & filters.me)
+async def ragel(c, msg):       
+     await msg.reply_voice("https://t.me/UI3I3/87")
+
+@l313l.on_message(filters.command("موزه", prefixes=f".") & filters.me)
+async def moza(c, msg):       
+     await msg.reply_voice("https://t.me/UI3I3/73")          
+ 
+@l313l.on_message(filters.command("انا فين", prefixes=f".") & filters.me)
+async def feen(c, msg):       
+     await msg.reply_voice("https://t.me/UI3I3/75")
+
+@l313l.on_message(filters.command("خلصانه", prefixes=f".") & filters.me)
+async def hossam(c, msg):       
+     await msg.reply_voice("https://t.me/UI3I3/74")
