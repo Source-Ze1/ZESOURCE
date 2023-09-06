@@ -243,4 +243,25 @@ async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit(
             "** قائمة اوامر تجميع النقاط و بوت وعد **:\n ☆•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•☆\n ۞︙ اختر احدى هذه القوائم\n\n- ( `.اوامر التجميع` ) \n- ( `.اوامر وعد` ) \n☆•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•☆\n⌔︙CH : @UI_XB"
+
+)
+@l313l.ar_cmd(
+    pattern="م22$",
+    command=("م22", plugin_category),
+)
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit(
+            "** اوامر ميمز 1 **:\n ☆•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•☆\n ۞︙ اختر احدى هذه الاوامر\n\n  1- .عيب\n 2- .اجمد كده\n 3- .يالهوي\n 4- .احترمي نفسك\n 5- .مينفعش\n 6- .مديك قلبي\n 7- .اهلا بيك\n 8- .هعوره\n 9- .خد نفس\n 10- .حفل\n 11- .امال\n 12- .هتولعو\n 13- .انا تعبان\n 14- .عملت اي\n 15- .المخدرات\n☆•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•☆\n⌔︙CH : @UI_XB"
+)
+@l313l.ar_cmd(
+    pattern="م23$",
+    command=("م23", plugin_category),
+)
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit(
+            "** اوامر ميمز 2 **:\n ☆•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•☆\n ۞︙ اختر احدى هذه الاوامر\n\n  1- .يا مرا\n 2- .بتحرجني\n 3- .انضف\n 4- .هنضحك\n 5- .يا راجل\n 6- .موزه\n 7- .انا فين\n 8- .خلصانه\n☆•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•☆\n⌔︙CH : @UI_XB"
+
+
         )
