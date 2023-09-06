@@ -1,7 +1,3 @@
-تم كتبة الكود بواسطـة الهيبه مودي
-
-"""
-
 import asyncio
 import os
 import sys
