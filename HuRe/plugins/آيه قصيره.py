@@ -10,7 +10,7 @@ from HuRe import l313l
 from ..helpers.utils import reply_id
 
 
-@l313l.on(admin_cmd(outgoing=True, pattern="آيه قصيره$"))
+@l313l.on(admin_cmd(outgoing=True, pattern="آيه قصيره."))
 async def jepvois(vois):
   rl = random.randint(111,210)
   url = f"https://t.me/UIEITI/{rl}"
