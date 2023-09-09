@@ -27,7 +27,7 @@ plugin_category = "البوت"
 async def zelzal_gpt(event):
     zilzal = event.pattern_match.group(1)
     zzz = await event.get_reply_message()
-    chat = "@nlyrbot" #code by t.me/UP_UO
+    chat = "@V4JRBOT" #code by t.me/UP_UO
     if not zilzal and not event.reply_to_msg_id:
         return await edit_or_reply(event, "**𓆰بالـرد ع سـؤال او باضـافة السـؤال للامـر**\n**𓆰مثـــال :**\n`.ريفز من هو مكتشف الجاذبية الارضية`")
     if not zilzal and event.reply_to_msg_id and zzz.text: #code by t.me/UP_UO
@@ -41,7 +41,7 @@ async def zelzal_gpt(event):
             zzzthon = await conv.get_response()
             ahmed = zzzthon.text
             if "another 8 seconds" in zzzthon.text: #code by t.me/UP_UO
-                aa = ahmed.replace("⏳ Please wait another 8 seconds before sending the next question . . .", "**𓆰يُرجى الانتظار 8 ثوانٍ ⏳\n𓆰بين إرسـال كل سـؤال والتـالي**") 
+                aa = ahmed.replace("⏳ Please wait another 30 seconds before sending the next question . . .", "**𓆰يُرجى الانتظار 8 ثوانٍ ⏳\n𓆰بين إرسـال كل سـؤال والتـالي**") 
                 await event.delete()
                 return await borg.send_message(event.chat_id, aa)
             await asyncio.sleep(5)
@@ -54,7 +54,7 @@ async def zelzal_gpt(event):
             await zed.delete()
             await borg.send_message(event.chat_id, f"**السؤال : {zelzal}\n\n{malath}**\n\n───────────────────\n𝐙𝐄 𝐔𝐒𝐄𝐑𝐁𝐎𝐓**** 𝗧**ᴏᴏʟꜱ**\n\t\t\t\t\t\t\t\t@UI_XB • ᴼᵖᵉⁿᴬᴵ")
         except YouBlockedUserError: #code by t.me/UP_UO
-            await l313l(unblock("nlyrbot"))
+            await l313l(unblock("V4JRBOT"))
             await conv.send_message("/start")
             await conv.get_response()
             await conv.send_message(zelzal)
@@ -86,7 +86,7 @@ async def zelzal_gpt(event):
 async def zelzal_gpt(event):
     zilzal = event.pattern_match.group(1)
     zzz = await event.get_reply_message()
-    chat = "@nlyrbot" #code by t.me/UP_UO
+    chat = "@V4JRBOT" #code by t.me/UP_UO
     if not zilzal and not event.reply_to_msg_id:
         return await edit_or_reply(event, "**𓆰بالـرد ع سـؤال او باضـافة السـؤال للامـر**\n**𓆰مثـــال :**\n`.ريفز من هو مكتشف الجاذبية الارضية`")
     if not zilzal and event.reply_to_msg_id and zzz.text: #code by t.me/UP_UO
