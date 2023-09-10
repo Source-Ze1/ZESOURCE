@@ -1,4 +1,4 @@
-;# WRITE  BY HuRe
+# WRITE  BY HuRe
 # PLUGIN FOR HuRe 
 # @UI_XB
 
