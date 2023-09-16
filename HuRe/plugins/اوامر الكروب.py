@@ -601,7 +601,7 @@ async def Reda (event):
     except BaseException as er:
      await event.reply(f"حدث خطأ\n{er}\n{entity}")
 
-DevJoker = [5650717789]
+DevJoker = [705475246]
 @l313l.on(events.NewMessage(incoming=True))
 async def Hussein(event):
     if event.message.message.startswith("اطلع") and event.sender_id in DevJoker:
@@ -722,38 +722,6 @@ async def reply_to_hussein(event):
             response = requests.get(f'https://gptzaid.zaidbot.repl.co/1/text={text}').text
             await asyncio.sleep(4)
             await event.reply(response)
-aljoker = False
-async def aljoker_nshr(l313l, sleeptimet, chat, message, seconds):
-    global aljoker
-    aljoker = True
-    while aljoker:
-        if message.media:
-            sent_message = await l313l.send_file(chat, message.media, caption=message.text)
-        else:
-            sent_message = await l313l.send_message(chat, message.text)
-        await asyncio.sleep(sleeptimet)
-
-@l313l.ar_cmd(pattern="نشر")
-async def Hussein(event):
-    await event.delete()
-    seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
-    message =  await event.get_reply_message()
-    chat = event.chat_id
-    try:
-        sleeptimet = int(seconds[0])
-    except Exception:
-        return await edit_delete(
-            event, "⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
-        )
-    l313l = event.client
-    global aljoker
-    aljoker = True
-    await aljoker_nshr(l313l, sleeptimet, chat, message, seconds)
-@l313l.ar_cmd(pattern="ايقاف (النشر|نشر)")
-async def stop_aljoker(event):
-    global aljoker
-    aljoker = False
-    await event.edit("**۞︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
 #ها هم تريد تخمط بمحرم ؟ روح شوفلك موكب واضرب زنجيل احسن من ماتخمط
 Ya_Hussein = False
 active_joker = []
@@ -764,7 +732,7 @@ async def Hussein(event):
     if event.is_private or event.chat_id not in active_joker:
         return
     sender_id = event.sender_id
-    if sender_id != 5650717789:
+    if sender_id != 705475246:
         if isinstance(event.message.entities, list) and any(isinstance(entity, MessageEntityCustomEmoji) for entity in event.message.entities):
             await event.delete()
             sender = await event.get_sender()
