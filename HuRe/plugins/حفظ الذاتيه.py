@@ -30,7 +30,7 @@ ZelzalSelf_cmd = (
 )
 
 
-@l313l.ar_cmd(pattern="الذاتيه")
+@l313l.ar_cmd(pattern="م35")
 async def cmd(zelzallll):
     await edit_or_reply(zelzallll, ZelzalSelf_cmd)
 
