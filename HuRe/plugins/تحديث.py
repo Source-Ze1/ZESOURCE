@@ -268,7 +268,7 @@ async def upstream(event):
             f"I guess you are on selfhost. For self host you need to use `{cmdhd}update now`",
         )
     event = await edit_or_reply(event, f"ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱  - تحـديثـات السـورس\n**•─────────────────•**\n\n**⪼ يتم تنصيب التحديث  انتظر 🌐 ،**")
-    off_repo = "https://github.com/Source-Ze/UP_UO"
+    off_repo = "https://github.com/Source-Ze/ZESOURCE/blob/HuRe"
     os.chdir("/app")
     try:
         txt = (
