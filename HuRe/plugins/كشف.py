@@ -15,7 +15,7 @@ from ..core.managers import edit_or_reply
 from ..helpers import get_user_from_event, reply_id
 from . import spamwatch
 
-JEP_EM = Config.ID_EM or " •❃ "
+ZE_EM = Config.ID_EM or " •❃ "
 ID_EDIT = gvarstatus("ID_ET") or "ايدي"
 
 plugin_category = "utils"
@@ -76,17 +76,17 @@ async def fetch_info(replied_user, event):
     full_name = full_name or first_name
     username = "@{}".format(username) if username else ("لايـوجـد معـرف")
     user_bio = "لاتـوجـد نبـذة" if not user_bio else user_bio
-    rotbat = "⌁ من مطورين السورس 𓄂𓆃 ⌁" if user_id == 5650717789 else ("⌁ العضـو 𓅫 ⌁")
-    rotbat = "⌁ مـالك الحساب 𓀫 ⌁" if user_id == (await event.client.get_me()).id and user_id != 5650717789  else rotbat
+    rotbat = "⌁ من مطورين السورس 𓄂𓆃 ⌁" if user_id == 6509622797 else ("⌁ العضـو 𓅫 ⌁")
+    rotbat = "⌁ مـالك الحساب 𓀫 ⌁" if user_id == (await event.client.get_me()).id and user_id != 6509622797  else rotbat
     caption = "✛━━━━━━━━━━━━━✛\n"
-    caption += f"<b> {JEP_EM}╎الاسـم    ⇠ </b> {full_name}\n"
-    caption += f"<b> {JEP_EM}╎المعـرف  ⇠ </b> {username}\n"
-    caption += f"<b> {JEP_EM}╎الايـدي   ⇠ </b> <code>{user_id}</code>\n"
-    caption += f"<b> {JEP_EM}╎الرتبـــه  ⇠ {rotbat} </b>\n"
-    caption += f"<b> {JEP_EM}╎الصـور   ⇠ </b> {replied_user_profile_photos_count}\n"
-    caption += f"<b> {JEP_EM}╎الحساب ⇠ </b> "
+    caption += f"<b> {ZE_EM}╎الاسـم    ⇠ </b> {full_name}\n"
+    caption += f"<b> {ZE_EM}╎المعـرف  ⇠ </b> {username}\n"
+    caption += f"<b> {ZE_EM}╎الايـدي   ⇠ </b> <code>{user_id}</code>\n"
+    caption += f"<b> {ZE_EM}╎الرتبـــه  ⇠ {rotbat} </b>\n"
+    caption += f"<b> {ZE_EM}╎الصـور   ⇠ </b> {replied_user_profile_photos_count}\n"
+    caption += f"<b> {ZE_EM}╎الحساب ⇠ </b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
-    caption += f"\n<b> {JEP_EM}╎البايـو    ⇠ </b> {user_bio} \n"
+    caption += f"\n<b> {ZE_EM}╎البايـو    ⇠ </b> {user_bio} \n"
     caption += f"✛━━━━━━━━━━━━━✛"
     return photo, caption
 
@@ -252,3 +252,26 @@ async def _(event):
             )
     else:
         await edit_or_reply(event, f"۞︙ الـدردشـة الـحالية : `{str(event.chat_id)}`")
+#by Reda For ze 🔱
+@l313l.ar_cmd(
+    pattern=r"كشف_ايدي(?: (\d+))?$",
+    command=("كشف_ايدي", "utils"),
+)
+async def get_user_info(event):
+    chat_id = event.chat_id
+    user_input = event.pattern_match.group(1)
+    
+    if user_input:
+        user_id = int(user_input)
+        
+        try:
+            user = await l313l.get_entity(user_id)
+            profile_link = f"[المُهان هنا](tg://user?id={user.id})"
+            message = f"**معلومات العينتين** :\n**اسمه** : {user.first_name}\n**المعرف مالته** : `{user.username}`\n**حسابة الشخصي** : {profile_link}"
+            await edit_or_reply(event, message)
+        
+        except Exception as e:
+            await edit_or_reply(event, "**۞︙ غير موجود ** ")
+    
+    else:
+        await edit_or_reply(event, "**۞︙ ضع ايدي الشخص عزيزي **")
