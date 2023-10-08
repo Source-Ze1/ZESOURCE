@@ -104,7 +104,7 @@ def gen_user(choice):
     return username
 
 
-@l313l.ar_cmd(pattern="الصيد")
+@l313l.ar_cmd(pattern="م41")
 async def _(event):
     await event.edit(
         """
