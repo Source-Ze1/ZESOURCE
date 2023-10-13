@@ -5,7 +5,7 @@ from zthon import l313l
 from ..core.managers import edit_delete, edit_or_reply
  
 
-@l313l.ar_cmd(pattern="همسه ?(.*)")
+@l313l.ar_cmd(pattern="همسة ?(.*)")
 async def wspr(event):
     if event.fwd_from:
         return
