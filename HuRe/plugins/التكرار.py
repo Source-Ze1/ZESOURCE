@@ -402,6 +402,6 @@ async def spammer(event):
 
 
 # Copyright (C) 2023 ze . All Rights Reserved
-@l313l.ar_cmd(pattern="التكرار")
+@l313l.ar_cmd(pattern="م44")
 async def cmd(modyyyy):
     await edit_or_reply(modyyyy, ModySP_cmd)
