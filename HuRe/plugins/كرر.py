@@ -48,7 +48,7 @@ ModyPRO_cmd = (
 
 
 # Copyright (C) 2023 ZE . All Rights Reserved
-@l313l.ar_cmd(pattern="الاذاعة")
+@l313l.ar_cmd(pattern="م45")
 async def cmd(zelzallll):
     await edit_or_reply(zelzallll, ModyPRO_cmd)
 
